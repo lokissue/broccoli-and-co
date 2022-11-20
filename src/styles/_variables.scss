@@ -13,7 +13,7 @@ $color-basic: (
 );
 
 $color-neutral: (
-  white: #fff,
+  light: #fff,
   fill: #fdfdfd,
   gray-100: #f9f9f9,
   gray-200: #f5f4f4,
@@ -24,11 +24,13 @@ $color-neutral: (
   gray-700: #878787,
   gray-800: #565656,
   gray-900: #302f34,
-  black: #0e0e0c
+  dark: #0e0e0c
 );
 
 $theme-colors: (
     primary: #00b96b,
+    primary-dark: #009959,
+    primary-darker: #00663c,
     success: #44A129,
     warning: #FF7D00,
     danger: #F53F3F,
