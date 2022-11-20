@@ -1,0 +1,23 @@
+/* tokens */
+$header-background-color: map-get($map: $theme-colors, $key: 'fill');
+$header-box-shadow: 0 4px 13px -3px rgb(0 0 0 / 10%);
+
+$header-prefix-cls: #{$prefixCls}-header;
+$footer-prefix-cls: #{$prefixCls}-footer;
+
+.#{$header-prefix-cls} {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: $spacing-5 $spacing-none;
+    box-shadow: $header-box-shadow;
+    border-bottom: $border-1 $border-solid $color-border-2;
+    background: $header-background-color;
+}
+
+.#{$footer-prefix-cls} {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: $border-1 $border-solid $color-border-2;
+}

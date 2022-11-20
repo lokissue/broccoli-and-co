@@ -11,7 +11,12 @@
         font-family: 'Black Han Sans', sans-serif;
         font-size: 3rem;
     }
+    
     &-subtitle {
         margin-top: $spacing-7;
+    }
+    
+    &-request-button {
+        display: inline
     }
 }
