@@ -1,0 +1,159 @@
+$prefixCls: 'brocco';
+
+$default-font-size: 14px;
+
+$color-basic: (
+  brightest: #ffffff,
+  brighter: #f3f3f3,
+  bright: #dadada,
+  normal: null,
+  dark: #9c9c9c,
+  darker: #585858,
+  darkest: #1D2129
+);
+
+$color-neutral: (
+  white: #fff,
+  fill: #fdfdfd,
+  gray-100: #f9f9f9,
+  gray-200: #f5f4f4,
+  gray-300: #ededed,
+  gray-400: #e2e1e7,
+  gray-500: #d7d7d7,
+  gray-600: #aeaeae,
+  gray-700: #878787,
+  gray-800: #565656,
+  gray-900: #302f34,
+  black: #0e0e0c
+);
+
+$theme-colors: (
+    primary: #00b96b,
+    success: #44A129,
+    warning: #FF7D00,
+    danger: #F53F3F,
+    link: #165DFF,
+    text: #1D2129,
+    light: #fff,
+    fill: #fdfdfd,
+    dark: #0e0e0c
+);
+
+/*      fontSize      */
+$font-size-xs: 0.5rem;
+$font-size-s: 0.85rem;
+$font-size-m: 1rem;
+$font-size-l: 1.25rem;
+$font-size-xl: 1.5rem;
+
+/*      fontWeight      */
+
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+
+/*      borderSize      */
+
+$border-none: 0;
+$border-1: 1px;
+$border-2: 2px;
+$border-3: 3px;
+$border-4: 4px;
+$border-5: 5px;
+
+/*       borderStyle       */
+
+$border-solid: solid;
+$border-dashed: dashed;
+$border-dotted: dotted;
+
+/*       radius       */
+
+$border-radius-none: 0;
+$border-radius-small: 2px;
+$border-radius-medium: 4px;
+$border-radius-large: 8px;
+$border-radius-circle: 50%;
+
+/*       borderColor      */
+
+$color-border-1: rgba(0,0,0,0.1);
+$color-border-2: rgba(0,0,0,0.2);
+$color-border-3: rgba(0,0,0,0.3);
+
+/*      spacing      */
+$spacing-none: 0;
+$spacing-1: 2px;
+$spacing-2: 4px;
+$spacing-3: 6px;
+$spacing-4: 8px;
+$spacing-5: 10px;
+$spacing-6: 12px;
+$spacing-7: 16px;
+$spacing-8: 20px;
+$spacing-9: 24px;
+$spacing-10: 32px;
+$spacing-11: 36px;
+$spacing-12: 40px;
+$spacing-13: 48px;
+$spacing-14: 56px;
+$spacing-15: 60px;
+$spacing-16: 64px;
+
+/*      size      */
+$size-none: 0;
+$size-1: 4px;
+$size-2: 8px;
+$size-3: 12px;
+$size-4: 16px;
+$size-5: 20px;
+$size-6: 24px;
+$size-7: 28px;
+$size-8: 32px;
+$size-9: 36px;
+$size-10: 40px;
+$size-11: 44px;
+$size-12: 48px;
+$size-13: 52px;
+$size-14: 56px;
+$size-15: 60px;
+$size-16: 64px;
+$size-17: 68px;
+$size-18: 72px;
+$size-19: 76px;
+$size-20: 80px;
+
+$size-mini: $size-6;
+$size-small: $size-7;
+$size-default: $size-8;
+$size-large: $size-9;
+
+/*      media      */
+
+$media-xxs: 360px;
+$media-xs: 640px;
+$media-s: 768px;
+$media-m: 1024px;
+$media-l: 1280px;
+$media-xl: 1440px;
+
+
+$time: (
+  slow: 0.5s,
+  normal: 0.35s,
+  fast: 0.15s
+);
+
+
+
+$z: (
+  xs: 1,
+  s: 10,
+  m: 20,
+  l: 30,
+  xl: 50,
+  xxl: 100
+);

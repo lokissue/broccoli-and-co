@@ -1,0 +1,17 @@
+.home {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: $spacing-13 $spacing-none;
+    text-align: center;
+    justify-content: center;
+    margin-top: -$spacing-10;
+
+    &-title {
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 3rem;
+    }
+    &-subtitle {
+        margin-top: $spacing-7;
+    }
+}
