@@ -16,4 +16,12 @@ export interface ModalProps {
    * toggle visible state
    */
   toggle?: () => void;
+  /**
+   * callback fire when the modal open
+   */
+  onOpen?: () => void;
+  /**
+   * callback fire when the modal close
+   */
+  onClose?: () => void;
 }
