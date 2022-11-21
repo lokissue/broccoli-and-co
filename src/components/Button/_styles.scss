@@ -1,0 +1,72 @@
+$input-prefix-cls: #{$prefixCls}-button;
+
+@mixin btn-variant($color, $active-color) {
+  display: inline-block;
+  width: auto;
+  height: 2.4em;
+  line-height: 2.15em;
+  margin-bottom: $spacing-7;
+  padding: $spacing-none $spacing-5;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid $color;
+  transition: color 0.5s;
+  z-index: 1;
+  border-radius: 6px;
+  font-weight: 600;
+  color: $color;
+  background-color: transparent;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: $color;
+    height: 300px;
+    width: 400px;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.5s;
+  }
+
+  &:hover:before {
+    top: -60px;
+    left: -60px;
+  }
+
+  &:active:before {
+    background: $active-color;
+    transition: background 0s;
+  }
+}
+
+.#{$input-prefix-cls} {
+  &-primary {
+    @include btn-variant(
+      map-get($map: $theme-colors, $key: 'primary'),
+      map-get($map: $theme-colors, $key: 'primary-dark')
+    );
+  };
+
+  &-danger {
+    @include btn-variant(
+      map-get($map: $theme-colors, $key: 'danger'),
+      darken(map-get($map: $theme-colors, $key: 'danger'), 15%)
+    );
+  }
+
+  &-link {
+    @include btn-variant(
+      map-get($map: $theme-colors, $key: 'link'),
+      darken(map-get($map: $theme-colors, $key: 'link'), 15%)
+    );
+  }
+}

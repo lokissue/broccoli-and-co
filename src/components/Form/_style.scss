@@ -1,0 +1,36 @@
+$input-prefix-cls: #{$prefixCls}-forminput;
+
+.#{$input-prefix-cls} {
+  position: relative;
+  margin: $spacing-8 0;
+
+  & label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    color: map-get($theme-colors, 'text');
+    transition: all 0.15s ease-in-out;
+  }
+  & input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: map-get($theme-colors, 'text');
+  }
+  & input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid map-get($theme-colors, 'link');
+  }
+
+  & input:focus ~ label,
+  & input:valid ~ label,
+  & input:not(:placeholder-shown) ~ label {
+    top: -12px;
+    font-size: 12px;
+  }
+}
