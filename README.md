@@ -1,6 +1,80 @@
-# Getting Started with Create React App
+# Broccoli & Co
+**Broccoli & Co** is simple single-page web application for frontend challenge. 
+In this app, I try to use minimal dependency and No UI lib to build.
+**All components are built in typescript and SASS only.**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo link:
+Click to check out the [Live demo](https://quiet-sawine-9bfdda.netlify.app)👈
+## Screenshots
+
+![Broccoli & Co landing page preview](https://raw.githubusercontent.com/lokissue/broccoli-and-co/master/public/screenshot.png)
+
+## Table of Content:
+
+- [Broccoli & Co](#broccoli--co)
+  - [Demo link:](#demo-link)
+  - [Screenshots](#screenshots)
+  - [Table of Content:](#table-of-content)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Available Scripts](#available-scripts)
+    - [`yarn start`](#yarn-start)
+    - [`yarn test`](#yarn-test)
+    - [`yarn build`](#yarn-build)
+    - [`yarn eject`](#yarn-eject)
+  - [License](#license)
+
+## Technologies
+`React`, `Typescript`, `SASS`
+
+## Setup
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+* yarn
+  ```sh
+  npm install yarn@latest -g
+  ```
+### Installation
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/lokissue/broccoli-and-co.git
+   ```
+2. Install NPM packages
+* npm
+   ```sh
+   npm install
+   ```
+
+* yarn
+   ```sh
+   yarn install
+   ```
+3. Enter your API in `.env`
+   ```
+   REACT_APP_API_URL = ENTER_YOUR_API
+    ```
+4. Run the app
+* npm
+   ```sh
+   npm start
+   ```
+
+* yarn
+   ```sh
+   yarn start
+   ```
 
 ## Available Scripts
 
@@ -39,8 +113,11 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+MIT license @ [Luoming Zhang]([author.com](https://github.com/lokissue))
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+
