@@ -11,7 +11,8 @@
     "paths": {
       "components/*": ["components/*"],
       "views/*": ["views/*"],
-      "constants/*": ["constants/*"]
+      "constants/*": ["constants/*"],
+      "util/*": ["util/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
