@@ -46,6 +46,11 @@ $input-prefix-cls: #{$prefixCls}-button;
     background: $active-color;
     transition: background 0s;
   }
+
+  &:disabled {
+    color: map-get($map: $theme-colors, $key: "disabled");
+    border: 2px solid map-get($map: $theme-colors, $key: "disabled");
+  }
 }
 
 .#{$input-prefix-cls} {
