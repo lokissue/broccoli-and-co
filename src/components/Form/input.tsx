@@ -7,6 +7,7 @@ import { PREFIXCLS } from 'constants/data';
 const Input = (props: InputProps, ref) => {
   const prefixCls = PREFIXCLS + '-forminput';
   const { className, style, label, onChange, type, name, required, placeholder } = props;
+  const id = name + '_input';
   return (
     <div className={classNames(`${prefixCls}`, className)}>
       <input
@@ -16,8 +17,9 @@ const Input = (props: InputProps, ref) => {
         placeholder={placeholder || ' '}
         onChange={onChange}
         style={style}
+        id={id}
       />
-      <label>{label}</label>
+      <label htmlFor={id}>{label}</label>
     </div>
   );
 };
