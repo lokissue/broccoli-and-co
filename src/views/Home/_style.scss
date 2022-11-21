@@ -1,22 +1,72 @@
 .home {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: $spacing-13 $spacing-none;
+  text-align: center;
+  justify-content: center;
+  margin-top: -$spacing-10;
+
+  &-title {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 3rem;
+  }
+
+  &-subtitle {
+    margin-top: $spacing-7;
+  }
+
+  &-request-button {
+    margin-top: 2rem;
+    font-size: 16px;
+  }
+
+  &-modal {
+    width: 360px;
     display: flex;
-    flex: 1;
     flex-direction: column;
-    padding: $spacing-13 $spacing-none;
-    text-align: center;
-    justify-content: center;
-    margin-top: -$spacing-10;
+    align-items: center;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // min-width: 250px;
+      max-width: 300px;
+    }
 
     &-title {
-        font-family: 'Black Han Sans', sans-serif;
-        font-size: 3rem;
+      font-size: 1.2rem;
+      font-weight: $font-weight-semibold;
     }
-    
-    &-subtitle {
-        margin-top: $spacing-7;
+
+    &-divider {
+      width: 2rem;
+      margin-bottom: $spacing-8;
+      border-bottom: 1px solid map-get($map: $theme-colors, $key: 'dark');
     }
-    
-    &-request-button {
-        display: inline
+
+    &-button {
+      width: 100%;
     }
+
+    &-form {
+      width: 300px;
+      &-input {
+        // min-width: 250px;
+        width: 100%;
+      }
+    }
+
+    &-error-message {
+      color: map-get($map: $theme-colors, $key: 'danger');
+      font-size: 12px;
+    }
+
+    &-result-text {
+
+    }
+  }
 }
+
+

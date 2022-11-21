@@ -12,6 +12,7 @@ function App() {
         <div className={'header-wrapper'}>
           <a href='/'>
             <span className={'header-title'}>{BRAND_NAME}</span>
+            {/* <span className={'header-title'}>{process.env.REACT_APP_BRAND_NAME}</span> */}
           </a>
         </div>
       </Header>

@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-// import Button from 'components/Button';
+import { ModalState } from './interface';
+import Modal from 'components/Modal';
+import useModal from 'util/hooks/useModal';
+import Button from 'components/Button';
+import RequestForm from './RequestForm';
+import Result from './Result';
 
 const Home = () => {
+  const { isVisible, toggle } = useModal();
+  const [modalState, setModalState] = useState<ModalState>('REQUEST');
+
+  const switchForm = (state: ModalState) => {
+    setModalState(state);
+  };
+
   return (
     <div className={'home'}>
       <h1 className={'home-title'}>
@@ -11,7 +23,23 @@ const Home = () => {
         to enjoy every day.
       </h1>
       <h5 className={'home-subtitle'}>Be the first to know when we launch</h5>
-      <button className={'home-request-button'}>Request an Invite</button>
+      <div>
+        <Button className={'home-request-button'} onClick={toggle}>
+          Request an Invite
+        </Button>
+      </div>
+      <Modal
+        visible={isVisible}
+        toggle={toggle}
+        className={'home-modal'}
+        onClose={() => setModalState('REQUEST')}
+      >
+        {modalState === 'RESULT' ? (
+          <Result toggle={toggle} />
+        ) : (
+          <RequestForm toggle={toggle} switchForm={switchForm} />
+        )}
+      </Modal>
     </div>
   );
 };
