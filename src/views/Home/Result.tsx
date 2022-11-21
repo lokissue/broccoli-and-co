@@ -11,7 +11,7 @@ const Result = (props: resultFormProps) => {
     return () => switchForm && switchForm('REQUEST');
   }, [switchForm]);
   return (
-    <div className='home-modal-container'>
+    <div className='home-modal-container' data-testid='resultForm'>
       <p className={'home-modal-title'}>All done!</p>
       <span className={'home-modal-divider'}></span>
       <p

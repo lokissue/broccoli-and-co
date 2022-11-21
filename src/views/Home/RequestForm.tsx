@@ -30,6 +30,7 @@ const RequestForm = (props: requestFormProps) => {
 
   const sendRequest = async () => {
     setErrorMsg('');
+
     try {
       const url = process.env.REACT_APP_API_URL;
       if (!url) {
@@ -69,7 +70,11 @@ const RequestForm = (props: requestFormProps) => {
 
   return (
     <>
-      <form className={'home-modal-form home-modal-container'} onSubmit={handleSubmit}>
+      <form
+        className={'home-modal-form home-modal-container'}
+        onSubmit={handleSubmit}
+        data-testid='requestForm'
+      >
         <p className={'home-modal-title'}>Request on Invite</p>
         <span className={'home-modal-divider'}></span>
         <Input
@@ -102,6 +107,7 @@ const RequestForm = (props: requestFormProps) => {
           appearance='link'
           type='submit'
           disabled={isSending}
+          data-testid='submitBtn'
         >
           {isSending ? 'Sending, please wait...' : 'Send'}
         </Button>
@@ -109,7 +115,11 @@ const RequestForm = (props: requestFormProps) => {
           Cancel
         </Button>
       </form>
-      {errorMsg ? <span className='home-modal-error-message'>{errorMsg}</span> : null}
+      {errorMsg ? (
+        <span className='home-modal-error-message' data-testid='errorMsg'>
+          {errorMsg}
+        </span>
+      ) : null}
     </>
   );
 };

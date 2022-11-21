@@ -24,7 +24,7 @@ const Home = () => {
       </h1>
       <h5 className={'home-subtitle'}>Be the first to know when we launch</h5>
       <div>
-        <Button className={'home-request-button'} onClick={toggle}>
+        <Button className={'home-request-button'} onClick={toggle} data-testid='requestBtn'>
           Request an Invite
         </Button>
       </div>
@@ -33,6 +33,7 @@ const Home = () => {
         toggle={toggle}
         className={'home-modal'}
         onClose={() => setModalState('REQUEST')}
+        data-testid='requestModal'
       >
         {modalState === 'RESULT' ? (
           <Result toggle={toggle} />
